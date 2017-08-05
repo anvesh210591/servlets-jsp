@@ -27,3 +27,4 @@ All servlet/JSP engines must implement servlet/JSP part of Java EE specification
 ## Table of Contents:
 
 1. [Basics of Java Web Applications](introduction/directory_structure.md)
+2. [MVC Patterns](mvc/mvc_patterns.md)
