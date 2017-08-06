@@ -14,14 +14,14 @@ Before we use JSTL tags, we must code a taglib directive to specify the URI for 
 
 **JSTL if tag use**
 
-`
+```jsp
 <c:if test="${ message != null }">
   <p><i>${message}</i></p>
 </c:if>
-`
+```
 
-`
+```jsp
 <c:if test="${user.wantsUpdates == 'Yes'}">
   <p>This user wants updates</p>
 </c:if>
-`
+```

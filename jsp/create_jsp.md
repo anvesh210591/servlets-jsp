@@ -37,5 +37,25 @@ Five types:
 | <%@ %>   | JSP directive | to set conditions that apply to the entire JSP |
 | <% %>    | JSP Scriptlet | to insert a block of Java statements |
 | <%= %>  | JSP expression | to display the string value of expression |
+
 | <%-- --%> | JSP comment   | to tell the JSP engine to ignore code. |
 | <%! %>  | JSP declaration | to declare instance variables and methods for a JSP |
+
+You can use a directive to import classes in a JSP.
+
+`<%@ page import="java.util.*, java.io.Exception" %>`
+
+JSP tags that display or hide a message
+
+```jsp
+<%
+  String message = (String) request.getAttribute("message");
+  if(message != null) {
+%>
+  <p><i><%= message %></i></p>
+<%
+  }
+%>
+```
+
+When you use HTML comment the Java code in the comment is compiled and sent to browser as a comment. However, when you use JSP comment, the code is not compiled
