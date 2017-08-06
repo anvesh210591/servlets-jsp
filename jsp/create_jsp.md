@@ -31,10 +31,11 @@ application: the bean stored in ServletContext object.
 
 ## JSP tags
 Five types:
-| Tag     | Name          | Purpose |
+
+| Tag      | Name          | Purpose |
 -----------|:--------------|:-----------:|
-|<%@ %>   | JSP directive | to set conditions that apply to the entire JSP |
-|<% %>    | JSP Scriptlet | to insert a block of Java statements |
+| <%@ %>   | JSP directive | to set conditions that apply to the entire JSP |
+| <% %>    | JSP Scriptlet | to insert a block of Java statements |
 | <%= %>  | JSP expression | to display the string value of expression |
-| <%-- --%>| JSP comment   | to tell the JSP engine to ignore code. |
+| <%-- --%> | JSP comment   | to tell the JSP engine to ignore code. |
 | <%! %>  | JSP declaration | to declare instance variables and methods for a JSP |
