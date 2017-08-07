@@ -194,5 +194,15 @@ You can include html or jsp code partials into another JSP file using **import**
 
 3. Alternative, file can be included at runtime using JSTL import. JSTL import allows you to include files from other applications.
 
+```jsp
 <c:import url="/includes/header.html" />
 <c:import url="www.google.com/inclues/footer.jsp" />
+```
+
+- JSP has direct access to request, response, cookie, session objects.
+
+To display a cookie in JSP we simply use cookie object with name of the cookie.
+
+```jsp
+<p>Email cookie value: ${cookie.emailCookie.value}</p>
+```

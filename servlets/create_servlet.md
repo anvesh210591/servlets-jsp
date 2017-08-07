@@ -188,4 +188,5 @@ An instance variable of a servlet belongs to one instance of the servlet and is 
 To write data to a log file, we can use log methods of HttpServlet class.
 
 log(String messgae) : writes the specified message to the servers's log file.
-loc(String message, Throwable e): writes the specified message to server's log file followed by the stack trace of the exception.
+
+log(String message, Throwable e): writes the specified message to server's log file followed by the stack trace of the exception.
