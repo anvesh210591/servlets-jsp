@@ -33,3 +33,5 @@ All servlet/JSP engines must implement servlet/JSP part of Java EE specification
 5. [Cookies and Session](sessions/cookies_and_session.md)
 6. [JSP Expression Language](jsp/el.md)
 7. [How to use JSTL](jsp/jstl.md)
+8. [How to create Custom tags](jsp/create_custom_tags.md)
+9. [How to use MySQL](databases/mysql.md)
