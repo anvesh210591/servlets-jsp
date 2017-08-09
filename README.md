@@ -36,3 +36,4 @@ All servlet/JSP engines must implement servlet/JSP part of Java EE specification
 8. [How to create Custom tags](jsp/create_custom_tags.md)
 9. [How to use MySQL](databases/mysql.md)
 10. [How to use JDBC](databases/jdbc.md)
+11. [JPA to work with Database](databases/jpa.md)

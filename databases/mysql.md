@@ -122,3 +122,5 @@ WHERE email='ppatel@gmail.com';
 DELETE FROM table_name
 WHERE condition;
 ```
+
+You can check sqlsite application, that is developed with MySQL. It's like an interactive SQL interface.
