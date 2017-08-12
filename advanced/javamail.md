@@ -12,14 +12,19 @@ When you send an email message, the message is first sent from the mail client s
 |MIME | Multipurpose Internet Mail Extension - specifies type of content that can be sent as a message or attachment |
 
 javax.mail.jar - contains Java classes for the JavaMail API
+
 activation.jar - contains Java classes for JavaBean Activation Framework. These are necessary for the JavaMail API to run. It is included in Java SE 6 or later.
 
 - Some of the properties that can be set for a Session object.
 
 mail.transport.protocol - specifies the protocol that's used for the session.For sending emails, it's usually smtp or smtps.
+
 mail.smtp.host - specifies host computer for the SMTP server. If SMTP server is running on the same server as the web application, then this property is set to 'localhost'.
+
 mail.smtp.port - specifies the port that the SMTP server is using.
+
 mail.smtp.auth - specifies whether authentication is required to log in to the SMTP server.
+
 mail.smtp.quitwait - can be set to false to prevent an SSLException when you attempt to connect to a Gamil SMTP server.
 
 - How to get a mail session for a local SMTP server.
@@ -116,7 +121,7 @@ We can use static send method of Transport class with MimeMessage object as the 
 Transport.send(message);
 ```
 
--When authentication required
+- When authentication required
 
 ```Java
 Transport transport = session.getTransport();
@@ -125,7 +130,7 @@ transport.sendMessage(message, message.getAllRecipients());
 transport.close();
 ```
 
-Simple class for sending email from local SMTP server
+**Simple class for sending email from local SMTP server**
 
 ```Java
 import java.util.Properties;
@@ -159,7 +164,7 @@ public class MailUtilLocal {
 }
 ```
 
-- class for sending email with a remote SMTP server
+**class for sending email with a remote SMTP server**
 
 ```Java
 public class MailUtilGmail {

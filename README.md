@@ -38,3 +38,5 @@ All servlet/JSP engines must implement servlet/JSP part of Java EE specification
 10. [How to use JDBC](databases/jdbc.md)
 11. [JPA to work with Database](databases/jpa.md)
 12. [JavaMail API](advanced/javamail.md)
+13. [Java Security - working with SSL](advanced/security_ssl.md)
+14. [Restricted access to web resources](advanced/authorization.md)
