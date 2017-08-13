@@ -21,4 +21,6 @@ After buying the certificate, it is sent to web host who installs it for your si
 
 SSL strength refers to the length of the generated key that is created during the encryption process.The longer, the more difficult to crack the encryption code. If the web browser isn't able to support the strength provided by the certificate, a lesser strength is used.
 
-The Java Secure Socket Extension(JSSE) API makes it possible for a Java application to use a secure connection. 
+The Java Secure Socket Extension(JSSE) API makes it possible for a Java application to use a secure connection.
+
+## [Website security](security.md)
