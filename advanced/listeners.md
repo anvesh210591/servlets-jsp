@@ -116,3 +116,40 @@ HttpSessionListener works like a ServletContextListener. It lets you write code 
 - HttpSessionActivationListener - provides methods that are executed when the session is activated and deactivated. This happens when the session is migrating to another JVM.
 - ServletRequestListener - provides methods that are executed when a request object is initialized and destroyed. This happens every time the server receives and processes a request.
 - ServletRequestAttributeListener - provides methods that are executed when attributes are added to, removed from or replaced in request object.
+
+```java
+// ServletContextListener interface
+contextInitialized(ServletContextEvent e)
+contextDestroyed(ServletContextEvent e)
+
+// ServletContextAttributeListener interface
+attributeAdded(ServletContextAttributeEvent e)
+attributeRemoved(ServletContextAttributeEvent e)
+attributeReplaced(ServletContextAttributeEvent e)
+
+// HttpSessionListener interface
+sessionCreated(HttpSessionEvent e)
+sessionDestroyed(HttpSessionEvent e)
+
+// HttpSessionAttributeListener interface
+attributeAdded(HttpSessionBindinEvent e)
+attributeRemoved(HttpSessionBindingEvent e)
+attributeReplaced(HttpSessionBindingEvent e)
+
+// HttpSessionBindingListener interface
+valueBound(HttpSessionBindingEvent e)
+valueUnbound(HttpSessionBindingEvent e)
+
+// HttpSessionActivationListener interface
+sessionDidActivate(HttpSessionEvent e)
+sessionWillPassivate(HttpSessionEvent e)
+
+// ServletRequestListener interface
+requestInitialized(ServletRequestEvent e)
+requestDestroyed(ServletRequestEvent e)
+
+// servletRequestAttributeListener interface
+attributeAdded(ServletRequestAttributeEvent e)
+attributeRemoved(ServletRequestAttributeEvent e)
+attributeReplaced(ServletRequestAttributeEvent e)
+```
